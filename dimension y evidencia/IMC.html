@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Etapa 4 Funciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="main-header">
+        <a id="logo-header" href="#">
+            <span class="site-name">Etapa 4</span>
+            <span class="site-desc">Diseño Avanzado de Paginas Web</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="Etapa4Final.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Funciones Predefinidas</a>
+                    <div class="dropdown-content">
+                        <a href="Funciones1.html">Funciones de Conversion</a>
+                        <a href="Funciones2.html">Funciones cadenas de texto</a>
+                        <a href="Funciones3.html">Funciones de Arrays</a>
+                        <a href="Funciones4.html">Funciones Matematicas</a>
+                    </div>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Funciones Definidas por el Usuario</a>
+                        <div class="dropdown-content">
+                            <a href="areaCirculo.html">Area de Circulo</a>
+                            <a href="IMC.html">Calcular IMC</a>
+                        </div></li>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<font face="Arial">
+<h2>Funciones definidas por el Usuario</h2>
+<script type="text/javascript">
+    function calcularIMC(peso, altura) {
+        return peso / Math.pow(altura, 2);
+    }
+
+    var peso = prompt("Cuanto pesas: ","en kg");
+    var altura = prompt("Cual mides: ","en metros");
+
+    var IMC = Math.round(calcularIMC(peso,altura));
+
+    if (IMC >= 18.5 && IMC <24.9) {
+        document.write("El IMC es " + IMC + ", Tienes un peso normal.");
+     } else if (IMC >= 25 && IMC <29.9) {
+        document.write("El IMC es " + IMC + ", Tienes sobrepeso.");
+     } else if (IMC >= 30 && IMC <34.9) {
+        document.write("El IMC es " + IMC + ", Tienes obesidad moderada");
+     } else if (IMC >= 35 && IMC <39.9) {
+        document.write("El IMC es " + IMC + ", Tienes obesidad severa");
+    }
+    else {
+        document.write("No aplica con ese peso o estatura");
+    }
+</script>
+</font>
+</body>
+</html>

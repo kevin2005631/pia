@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Etapa 4 Funciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="main-header">
+        <a id="logo-header" href="#">
+            <span class="site-name">Etapa 4</span>
+            <span class="site-desc">Diseño Avanzado de Paginas Web</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="Etapa4Final.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Funciones Predefinidas</a>
+                    <div class="dropdown-content">
+                        <a href="Funciones1.html">Funciones de Conversion</a>
+                        <a href="Funciones2.html">Funciones cadenas de texto</a>
+                        <a href="Funciones3.html">Funciones de Arrays</a>
+                        <a href="Funciones4.html">Funciones Matematicas</a>
+                    </div>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Funciones Definidas por el Usuario</a>
+                        <div class="dropdown-content">
+                            <a href="areaCirculo.html">Area de Circulo</a>
+                            <a href="IMC.html">Calcular IMC</a>
+                        </div></li>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<h2>Funciones de JavaScrip</h2>
+<p>Este ejemplo se convierte grados Fahrenheit a Celsius y utiliza la funcio parselnt que convierte cualquier valor a un entero</p>
+    <script type="text/javascript">
+        var faren = prompt("Escribe los grados Fahrenheit para convertir a Celsius");
+        if (faren !== null && faren !== "") {
+            var num = parseFloat(faren);
+            var x = (5/9) * (num - 32);
+            document.write("Convertido a grados Celsius es: " + parseInt(x));
+        } else {
+            document.write("No se introdujeron grados.");
+        }
+    </script>
+</body>
+</html>

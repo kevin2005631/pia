@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Etapa 4 Funciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="main-header">
+        <a id="logo-header" href="#">
+            <span class="site-name">Etapa 4</span>
+            <span class="site-desc">Diseño Avanzado de Paginas Web</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="Etapa4Final.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Funciones Predefinidas</a>
+                    <div class="dropdown-content">
+                        <a href="Funciones1.html">Funciones de Conversion</a>
+                        <a href="Funciones2.html">Funciones cadenas de texto</a>
+                        <a href="Funciones3.html">Funciones de Arrays</a>
+                        <a href="Funciones4.html">Funciones Matematicas</a>
+                    </div>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Funciones Definidas por el Usuario</a>
+                        <div class="dropdown-content">
+                            <a href="areaCirculo.html">Area de Circulo</a>
+                            <a href="IMC.html">Calcular IMC</a>
+                        </div></li>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<font face="Arial">
+    <h2>Funciones que devuelven resultados</h2>
+
+    <script type="text/javascript">
+
+        function calcularAreaCirulo(radio) {
+            var area = Math.PI * radio * radio;
+            var area2 =area.toFixed(2);
+            return area2;
+        }
+        radio=prompt("Dame el valor del radio del círculo:", "Escribe un numero entero");
+        var areaCirculo = calcularAreaCirulo(radio);
+        document.write("El área del círculo es:" + areaCirculo);
+    </script>
+</font>
+</body>
+</html>

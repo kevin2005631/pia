@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Etapa 4 Funciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="main-header">
+        <a id="logo-header" href="#">
+            <span class="site-name">Etapa 4</span>
+            <span class="site-desc">Diseño Avanzado de Paginas Web</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="Etapa4Final.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Funciones Predefinidas</a>
+                    <div class="dropdown-content">
+                        <a href="Funciones1.html">Funciones de Conversion</a>
+                        <a href="Funciones2.html">Funciones cadenas de texto</a>
+                        <a href="Funciones3.html">Funciones de Arrays</a>
+                        <a href="Funciones4.html">Funciones Matematicas</a>
+                    </div>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">Funciones Definidas por el Usuario</a>
+                        <div class="dropdown-content">
+                            <a href="areaCirculo.html">Area de Circulo</a>
+                            <a href="IMC.html">Calcular IMC</a>
+                        </div></li>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<font face="Arial">
+<h2>Funciones matematicas JavaScrip</h2>
+
+<script type="text/javascript">
+    document.write("<h2>Uso de la función de Valor Absoluto</h2>");
+    let a = Math.abs(7.25);
+    let b = Math.abs(-7.25);
+    let c = Math.abs(null);
+    let d = Math.abs("Hello");
+    let e = Math.abs(2-3);
+    document.write(a+"<br>" + b + "<br>" + c + "<br>" + d + "<br>" + e + "<br>");
+
+    document.write("<h2>Uso de la función de Valor Maximo de una lista</h2>");
+    let x = Math.max(5,10);
+    document.write("El maximo es: "+ x + "<br>");
+
+    let y = Math.max(0, 150, 30, 20, 38);
+    document.write("El maximo es: "+ y + "<br>");
+
+    let z = Math.max(-5, 4);
+    document.write("El maximo es: "+ z + "<br>");
+
+    document.write("<h2>Uso de la funcion que devuleve un valor al azar en un rango de 0 a 99</h2>");
+    let numero = Math.floor(Math.random() * 100);
+    document.write("El numero al azar es: "+ numero + "<br><br>");
+
+    document.write("<h2>Uso de la funcion genera una Potencia</h2>");
+    let potencia = Math.pow(2,3);
+    document.write("El numero elevado a la potencia indicada es: " + potencia);
+</script>
+</font>
+</body>
+</html>
